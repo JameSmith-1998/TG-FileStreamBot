@@ -16,7 +16,7 @@ routes = web.RouteTableDef()
 @routes.get("/", allow_head=True)
 async def root_route_handler(request):
     bot_details = await StreamBot.get_me()
-    return web.json_response({Yeh I'm running AF ft.BotDunia })
+    return web.json_response(Yeh I'm running AF ft.BotDunia)
 
 
 @routes.get("/stream/{message_id}")
